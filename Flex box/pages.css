@@ -1,0 +1,46 @@
+@media screen and (max-width: 505px){
+    header {
+        flex-flow: column;
+        
+    }
+    header menu {
+        flex-flow: column;
+        width: 100%;
+        text-align: center;
+        gap: 8px;
+
+    }
+
+    header>menu>a {
+        padding: 10px;
+
+    }
+    header h1 {
+        flex: 50px;
+    }
+    
+}
+
+@media screen and (max-width: 649px) {
+    #textimg {
+        flex-flow: column;
+        
+    }
+    #imgtex {
+        flex-flow: column;
+        
+    }
+    .imagem {
+        display: block;
+        margin: auto;
+        margin: 10px  auto 10px auto;
+    }
+    .imagem2 {
+         display: block;
+        margin: auto;
+        margin: 10px  auto 10px auto;
+    }
+    .iguais {
+
+    }
+}

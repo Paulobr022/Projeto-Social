@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor1:#FFFFFF;
+    --cor2:#91877fc9;
+    --cor3:#5C5552;
+    --cor4:#090C9B;
+    --cor5:#3D52D5;
+    --font1:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --font2: Arial, Helvetica, sans-serif;
+    --font3:"Saira",sans-serif;
+}
+
+.caixa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    background-color:var(--cor1);
+    border-bottom:1px solid rgba(0, 0, 0, 0.075);
+    border-radius: 10px;
+    color: var(--cor1);
+    padding: min(6px, 2%);
+}
+.caixa>h1 {
+    flex: 0 0 150px;
+    font-family: var(--font2);
+    color: black;
+}
+.caixa nav {
+    display: flex;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.041);
+    border-radius: 10px;
+    gap: 10px;
+}
+.caixa>nav>a {
+    background-color: var(--cor1);
+    font-family: var(--font2);
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 10px;
+    transition: transform .4s;
+}
+.caixa>nav>a:hover {
+    background-color: rgba(0, 0, 0, 0.185);
+    transform: translate(0px, -3px);
+    transition: transform .4s;
+}
+
+#loja {
+    font-family: var(--font3);
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.274);
+    
+}
+
+.caixa1 {
+    flex-flow: row-reverse;
+    background-color: lightgrey;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0px 0px 15px 0px;
+    margin-right: 10px;
+    
+}
+
+div h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.caixa2 {
+    flex-flow: row;
+    background-color: lightgrey;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0px 0px 15px 0px;
+    
+}
+.caixa3 {
+    flex-flow: row-reverse;
+    background-color: lightgrey;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0px 0px 15px 0px;
+    
+}
+
+#imagen {
+    opacity: 1;
+    border-radius: 10px;
+    margin: 10px;
+}
+#final {
+    font-family: var(--font2);
+    background-color: rgb(140, 154, 165);
+    font-size: 20px;
+    text-align: center;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 5px;
+    transition: transform .4s;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.274);
+    
+}
+#final:hover {
+    cursor: pointer;
+    transform: translate(0px, -3px);
+    transition: transform .4s;
+}
+
+#final>a {
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width:630px) {
+    #loja {
+        flex-flow: column;
+        text-align: center;
+        
+    }
+    #loja h2 {
+        display: block;
+        margin: auto
+    }
+    #imagen {
+    background-size: contain;
+    aspect-ratio: 16 / 16;
+}
+}
+
